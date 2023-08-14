@@ -12,12 +12,36 @@
 </head>
 <body>
 
- hier moet de gif komen van de AI planten en de normale planten afwisselend flikkerend
+<img src="img/myimage.gif" alt="plant" id="clickable-image" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" >
 
-  <div class="navigation-buttons">
-    <a href="025.html">vorige</a>
-    <a href="027.html">volgende</a>
+ 
+
+
+
+
+  <div id="hidden-div" style="display: none;">
+    <!-- Content of the hidden div -->
+    <div class="navigation-buttons">
+      <a href="025.html">vorige</a>
+      <a href="027.html">volgende</a>
+    </div>
   </div>
+
+  <!-- JavaScript code placed just before the closing </body> tag -->
+  <script>
+    const clickableImage = document.getElementById('clickable-image');
+    const hiddenDiv = document.getElementById('hidden-div');
+
+    clickableImage.addEventListener('click', function() {
+      if (hiddenDiv.style.display === 'none') {
+        hiddenDiv.style.display = 'block';
+      } else {
+        hiddenDiv.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
 
 </body>
 </html>

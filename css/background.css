@@ -1,0 +1,15 @@
+body {
+    background-image: "img/woestijn.png"; /* Set the image as background */
+    background-size: cover; /* Cover the entire background with the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    color: white; /* Set the text color to white */
+    margin: 0; /* Remove default margin for the body */
+    padding: 0; /* Remove default padding for the body */
+  }
+  
+  .content {
+    max-width: 800px; /* Adjust the maximum width of your content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Add some padding to the content for spacing */
+  }
+  
